@@ -1,10 +1,10 @@
 ---
 title: Hello world,
 description: My first post
-author: danu
+author: Danu
 date: 2025-02-07 11:33:00 +0800
 categories: [Blogging, Demo]
-tags: [Writings]
+tags: [WRITINGS]
 pin: true
 math: true
 mermaid: true
