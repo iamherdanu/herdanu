@@ -58,3 +58,11 @@ SSH:
 ```Terminal
 git@github.com:username/repo-github.git
 ```
+### Lain-lain
+
+`git init` inisiasi repository
+`git checkout` pindah branch 
+`rm -rf .git` hapus inisiasi git
+`git checkout -b new-branch` pindah branch sekaligus buat branch baru
+`git diff new-branch` membandingkan perubahan yang dibuat
+`git merge new-branch` menggabungkan branch baru ke branch utama
