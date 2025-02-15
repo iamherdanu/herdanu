@@ -6,7 +6,11 @@ categories: [Blogging, Tutorial]
 tags: [GITHUB, SSH KEY, PERSONAL TOKEN]
 ---
 
-Di local komputer - inisiasi Git, upload perubahan, commit dan push
+Configurasi dan login
+<https://git-scm.com/docs/git-config>
+
+
+Di local komputer - inisiasi git, upload perubahan, commit dan push
 
 ```Terminal
 git init
@@ -60,9 +64,53 @@ git@github.com:username/repo-github.git
 ```
 ### Lain-lain
 
-`git init` inisiasi repository
-`git checkout` pindah branch 
-`rm -rf .git` hapus inisiasi git
-`git checkout -b new-branch` pindah branch sekaligus buat branch baru
-`git diff new-branch` membandingkan perubahan yang dibuat
-`git merge new-branch` menggabungkan branch baru ke branch utama
+1. `git init` inisiasi repository
+2. `git checkout` pindah branch 
+3. `rm -rf .git` hapus inisiasi git
+4. `git checkout nama-branch`: pindah branch
+5. `git checkout -b new-branch` pindah branch sekaligus buat branch baru
+6. `git diff new-branch` membandingkan perubahan yang dibuat
+7. `git merge new-branch` menggabungkan branch baru ke branch utama
+8. `git remote -v` cek remote yang terhubung
+9. `git branch -d feature-new-branch` menghapus branch
+
+Bagaimana jika repo sudah di init namun belum di push?
+> repo dengan nama tersebut tetap aktif, dan tidak bisa inisiasi
+dengan nama yang sama.
+{: .prompt-info }
+
+Bagaimana jika tidak sengaja melakukan git init di folder induk, dan bukan di folder yang ingin saya upload? 
+> hapus git di folder tersebut, `rm -rf nama repo.git` kemudian init di folder yang benar.
+{: .prompt-info }
+
+### Git Branch
+
+>"Use a branch to isolate development work without affecting other branches in the repository. Each repository has one default branch, and can have multiple other branches. You can merge a branch into another branch using a pull request". 
+<https:/docs.github.com/about-branches>.
+
+Mengganti branch dan membuat branch baru
+```terminal
+git checkout -b feature-branch
+```
+Branch baru berhasil dibuat. Cek branch; 
+```terminal
+git branch
+```
+dan kembali ke branch utama
+```terminal
+git checkout master
+```
+mengaplikasikan feature yg dibuat ke branch utama
+1. masuk ke branch utama `git checkout master`
+2. bandingkan perubahan yang dibuat `git diff feature-branch`
+3. mengaplikasikan perubahan dengan _merge/menggabungkan_ ke branch utama `git merge feature-branch`
+
+> pastikan untuk push terlebih dahulu perubahna yang dibuat di branch baru:
+`git push --index.html origin feature-branch`
+{: .prompt-info }
+
+
+lakukan pull request, untuk mengajukan revisi perubahan. pada branch tersebut.
+```terminal
+git pull
+```
