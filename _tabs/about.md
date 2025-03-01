@@ -12,9 +12,15 @@ Here's some project that I currently working on:
 
 # My Work
 
+## Khatulistiwa Global Berkah
+An company that provide a solution for people who want to learn and grow their business.
+<https://khatulistiwaglobalberkah.com/> 
+
+## Blog
+A simple blog page build with pure HTML, CSS and JS. In this case I implenet grid, flexbox and responsive design. Also used some particleJS for animation.
+<https://iamherdanu.github.io/>
+
 ## Construct Pro Solutions
-<https://constructpro.vercel.app/>
- 
 An company website that working on construction. I used Ruby in this project. Wishing to this project become better and better.  
 
 ## Tasking Management
