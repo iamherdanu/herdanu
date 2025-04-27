@@ -1,14 +1,10 @@
 ---
 title: Ah Sunday Morning
-description: Well , it's Sunday morning, and I'm feeling quite serene...
 author: Danu
 date: 2025-03-23
 categories: [Blogging] 
 ---
 
-Sunday morning, I heard this song played, in the majestic caffe room, then I realise how far I am from beauty love feeling. Man, I miss that feeling..
-
---
 
 Georgia, wrap me up in all your 
 
